@@ -9,7 +9,7 @@ from hetzner_ddns import kritzl_dev
 
 def main():
     argp = argparse.ArgumentParser(prog="hetzner_ddns", description="DynDNS client for Hetzner DNS")
-    argp.add_argument("-c", "--config", type=Path, help="Path to a config.toml")
+    argp.add_argument("-c", "--config", type=Path, required=True, help="Path to a config.toml")
     args = argp.parse_args()
 
     cfg = load_config(args.config)
