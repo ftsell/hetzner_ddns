@@ -1,0 +1,22 @@
+# See Manifest format reference: https://doc.rust-lang.org/cargo/reference/manifest.html
+[package]
+name = "hetzner_ddns"
+version = "0.1.0"
+authors = ["Finn Sell <dev@ftsell.de>"]
+edition = "2021"
+description = "DynDNS client for Hetzner DNS"
+readme = "./README.md"
+homepage = "https://github.com/ftsell/hetzner_ddns"
+license = "MIT"
+
+[dependencies]
+reqwest = { version = "0.12", features = ["json"] }
+tokio = { version = "1.38.0", features = [ "rt", "fs", "macros" ] }
+serde = { version = "1.0", features = ["derive"] }
+toml = "0.8.14"
+clap = { version = "4.5.4", features = ["derive"] }
+tracing = "0.1.40"
+tracing-subscriber = "0.3.18"
+eyre = "0.6.12"
+color-eyre = "0.6.3"
+lazy_static = "1.4.0"
