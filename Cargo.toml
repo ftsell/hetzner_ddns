@@ -9,6 +9,12 @@ readme = "./README.md"
 homepage = "https://github.com/ftsell/hetzner_ddns"
 license = "MIT"
 
+[profile.release]
+opt-level = "s"
+lto = true
+strip = "debuginfo"
+
+
 [dependencies]
 reqwest = { version = "0.12", features = ["json"] }
 tokio = { version = "1.38.0", features = [ "rt", "fs", "macros" ] }
