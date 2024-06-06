@@ -1,6 +1,6 @@
 use core::fmt;
 use std::{
-    net::{IpAddr, Ipv4Addr, Ipv6Addr},
+    net::{Ipv4Addr, Ipv6Addr},
     path::{Path, PathBuf},
     str::FromStr,
 };

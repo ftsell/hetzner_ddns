@@ -119,6 +119,7 @@ impl Client {
     /// - `search_name`: Partial name of a zone.
     /// - `page`: A page parameter specifies the page to fetch.
     ///    The number of the first page and default is 1.
+    #[allow(unused_variables)]
     pub async fn get_all_zones(
         &mut self,
         name: Option<&str>,
