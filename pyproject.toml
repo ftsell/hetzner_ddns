@@ -5,8 +5,8 @@ dynamic = ["version", "description"]
 license = { file = "LICENSE" }
 
 dependencies = [
-    "requests~=2.32",
-    "pydantic~=2.7",
+    "requests~=2.31",
+    "pydantic~=2.6",
 ]
 
 [project.urls]
